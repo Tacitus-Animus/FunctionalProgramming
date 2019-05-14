@@ -3,8 +3,6 @@ package fp.memoization;
 import java.util.Arrays;
 import java.util.List;
 
-import utils.io.Output;
-
 public class TestRodCutter {
 
 	public static void main(String[] args) {
@@ -21,11 +19,11 @@ public class TestRodCutter {
 //		Output.testSpeed("Max for 16", () -> System.out.println(basicOverlappingRec.maxProfit(17)));
 				
 		System.out.println("Memo:");
-		Output.testSpeed("Max for 5", () -> System.out.println(memoized.maxProfit(5)));
-		Output.testSpeed("Max for 22", () -> System.out.println(memoized.maxProfit(22)));
-		Output.testSpeed("Max for 38", () -> System.out.println(memoized.maxProfit(38)));
-		Output.testSpeed("Max for 60", () -> System.out.println(memoized.maxProfit(60)));
-		Output.testSpeed("Max for 60", () -> System.out.println(memoized.maxProfit(60)));
+		System.out.println(memoized.maxProfit(5));
+		System.out.println(memoized.maxProfit(22));
+		System.out.println(memoized.maxProfit(38));
+		System.out.println(memoized.maxProfit(60));
+		System.out.println(memoized.maxProfit(60));
 		
 	}
 }

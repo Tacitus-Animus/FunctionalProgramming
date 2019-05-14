@@ -2,8 +2,6 @@ package fp.LazyEvaluation;
 
 import java.util.function.Supplier;
 
-import utils.io.Output;
-
 public class TestLazyEval {
 
 	public static void main(String[] args) {
@@ -22,12 +20,11 @@ public class TestLazyEval {
 	
 	static boolean evaluate(int i) {
 		System.out.println("Evaluating " + i);
-		simTimeConsumingTask();
+		//simTimeConsumingTask();
 		return i >= 100;
 	}
 	
 	static void simTimeConsumingTask() {
-		Output.type("..........");
 	}
 	
 }
